@@ -546,7 +546,7 @@ class FileNode(ModelBase):
                 # Determine whether file is a supported image:
                 try:
                     self.pre_save_image()
-                except IOError:
+                except (IOError, OverflowError, MemoryError):
                     self.media_type = FileNode.mimetype_to_media_type(self.name)
 
         self.slug = slugify(self.name)

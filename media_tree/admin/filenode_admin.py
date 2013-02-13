@@ -113,9 +113,9 @@ class FileNodeAdmin(MPTTModelAdmin):
 
     class Media:
         js = [
-            os.path.join(STATIC_SUBDIR, 'lib/jquery', 'jquery-1.7.1.min.js').replace("\\","/"),
-            os.path.join(STATIC_SUBDIR, 'lib/jquery', 'jquery.ui.js').replace("\\","/"),
-            os.path.join(STATIC_SUBDIR, 'lib/jquery', 'jquery.cookie.js').replace("\\","/"),
+            # os.path.join(STATIC_SUBDIR, 'lib/jquery', 'jquery-1.7.1.min.js').replace("\\","/"),
+            # os.path.join(STATIC_SUBDIR, 'lib/jquery', 'jquery.ui.js').replace("\\","/"),
+            # os.path.join(STATIC_SUBDIR, 'lib/jquery', 'jquery.cookie.js').replace("\\","/"),
             os.path.join(STATIC_SUBDIR, 'lib', 'fileuploader.js').replace("\\","/"),
             os.path.join(STATIC_SUBDIR, 'js', 'admin_enhancements.js').replace("\\","/"),
             os.path.join(STATIC_SUBDIR, 'js', 'django_admin_fileuploader.js').replace("\\","/"),
